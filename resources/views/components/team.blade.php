@@ -16,9 +16,15 @@
                         <h4>{{ $team->name }}</h4>
                         <span>{{ $team->title }}</span>
                         <div class="social">
+                            @if ($team->facebook)
                             <a href="{{ $team->facebook }}"><i class="bi bi-facebook"></i></a>
+                            @endif
+                            @if ($team->instagram)
                             <a href="{{ $team->instagram }}"><i class="bi bi-instagram"></i></a>
+                            @endif
+                            @if ($team->linkedin)
                             <a href="{{ $team->linkedin }}"><i class="bi bi-linkedin"></i></a>
+                            @endif
                         </div>
                     </div>
                 </div>

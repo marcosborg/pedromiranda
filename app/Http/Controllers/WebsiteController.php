@@ -25,7 +25,7 @@ class WebsiteController extends Controller
         $about = About::first();
         $boxes = Box::limit(3)->orderBy('id', 'desc')->get();
         $clients = Client::limit(6)->orderBy('id', 'desc')->get();
-        $features = Feature::orderBy('id', 'desc')->get();
+        $features = Feature::orderBy('position', 'asc')->get();
         $services = Service::orderBy('id', 'desc')->get();
         $testimonials = Testimonial::orderBy('id', 'desc')->get();
         $teams = Team::orderBy('id', 'desc')->get();

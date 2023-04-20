@@ -30,6 +30,7 @@ class Feature extends Model implements HasMedia
         'title',
         'icon',
         'text',
+        'position',
         'created_at',
         'updated_at',
         'deleted_at',

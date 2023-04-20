@@ -59,6 +59,14 @@
                             @endif
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.feature.fields.position') }}
+                        </th>
+                        <td>
+                            {{ $feature->position }}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">

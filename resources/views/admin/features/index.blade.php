@@ -35,6 +35,9 @@
                             {{ trans('cruds.feature.fields.image') }}
                         </th>
                         <th>
+                            {{ trans('cruds.feature.fields.position') }}
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -60,6 +63,9 @@
                                         <img src="{{ $feature->image->getUrl('thumb') }}">
                                     </a>
                                 @endif
+                            </td>
+                            <td>
+                                {{ $feature->position ?? '' }}
                             </td>
                             <td>
                                 @can('feature_show')
