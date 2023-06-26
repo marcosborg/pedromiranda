@@ -11,7 +11,7 @@
             @foreach ($teams as $key => $team)
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ $key }}00">
                 <div class="member">
-                    <div class="pic"><img src="{{ $team->photo->getUrl() }}" class="img-fluid" alt=""></div>
+                    <div class="pic"><img src="{{ $team->photo ? $team->photo->getUrl() : 'https://placehold.co/600x600' }}" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>{{ $team->name }}</h4>
                         <span>{{ $team->title }}</span>
