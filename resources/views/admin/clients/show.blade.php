@@ -35,6 +35,14 @@
                             @endif
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.client.fields.link') }}
+                        </th>
+                        <td>
+                            {{ $client->link }}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">

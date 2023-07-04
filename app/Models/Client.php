@@ -27,6 +27,7 @@ class Client extends Model implements HasMedia
     ];
 
     protected $fillable = [
+        'link',
         'created_at',
         'updated_at',
         'deleted_at',

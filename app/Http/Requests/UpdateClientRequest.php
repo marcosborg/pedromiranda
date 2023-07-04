@@ -16,6 +16,11 @@ class UpdateClientRequest extends FormRequest
 
     public function rules()
     {
-        return [];
+        return [
+            'link' => [
+                'string',
+                'nullable',
+            ],
+        ];
     }
 }

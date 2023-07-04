@@ -29,6 +29,9 @@
                             {{ trans('cruds.client.fields.logo') }}
                         </th>
                         <th>
+                            {{ trans('cruds.client.fields.link') }}
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -48,6 +51,9 @@
                                         <img src="{{ $client->logo->getUrl('thumb') }}">
                                     </a>
                                 @endif
+                            </td>
+                            <td>
+                                {{ $client->link ?? '' }}
                             </td>
                             <td>
                                 @can('client_show')
