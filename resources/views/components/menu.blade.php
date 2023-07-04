@@ -7,7 +7,7 @@
                     <li><a class="nav-link scrollto active" href="{{ request()->routeIs('home') ? '' : '/' }}#hero">Início</a></li>    
                     <li><a class="nav-link scrollto" href="{{ request()->routeIs('home') ? '' : '/' }}#about">Sobre nós</a></li>
                     <li><a class="nav-link scrollto" href="{{ request()->routeIs('home') ? '' : '/' }}#features">Serviços</a></li>
-                    <li><a class="nav-link scrollto" href="{{ request()->routeIs('home') ? '' : '/' }}#portfolio">Parcerias</a></li>
+                    <li><a class="nav-link scrollto" href="{{ request()->routeIs('home') ? '' : '/' }}#clients">Parcerias</a></li>
                     <li><a class="nav-link scrollto" href="{{ request()->routeIs('home') ? '' : '/' }}#portfolio">Notícias</a></li>
                     <li><a class="nav-link scrollto" href="{{ request()->routeIs('home') ? '' : '/' }}#team">Equipa</a></li>
                     <li><a class="nav-link scrollto" href="{{ request()->routeIs('home') ? '' : '/' }}#contact">Contactos</a></li>
